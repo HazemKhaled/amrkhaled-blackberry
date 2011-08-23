@@ -1,43 +1,49 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-        <title>Amr Khaled</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" id="viewport" content="height=device-height,width=device-width,user-scalable=no" />
-	<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script language="javascript" type="text/javascript" src="basic.js"></script>
-	<link rel="stylesheet" href="reset.css" type="text/css" />
-	<link rel="stylesheet" href="basic.css" type="text/css" />
-	<script type="text/javascript">
+<head>
+<title>Amr Khaled</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" id="viewport"
+	content="height=device-height,width=device-width,user-scalable=no" />
+<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+<script language="javascript" type="text/javascript" src="basic.js"></script>
+<link rel="stylesheet" href="reset.css" type="text/css" />
+<link rel="stylesheet" href="basic.css" type="text/css" />
+<script type="text/javascript">
 	var theme = screen.width + "x" + screen.height;
-            createLinkElement(theme + ".css");
+    createLinkElement(theme + ".css");
 	</script>
-	</head>
-	<body onload="init();">
-               
-               <div class="container">
+</head>
+<body onload="init();">
 
-                                 <div class="header">
-                                       <img src="images/amr_pic.png" class="amr_hpic" />
-                                       <div class="title ask-title"><img src="images/ask-title.png" /></div>
-                                       <a href="index.html" class="home"><img src="images/home.png" /></a>
-                                 </div><!--header-->
+<div class="container">
 
-        
-
-                                 <div class="content">
-                                       <div class="ask-content">
-                                             <img class="ask-text" src="images/ask-text.png" alt="" />
-                                             <textarea></textarea>
-                                             <input type="submit" value="" />
-                                       </div>
-
-                                 </div><!--content-->
-
-               </div>
+<div class="header"><img src="images/amr_pic.png" class="amr_hpic" />
+<div class="title ask-title"><img src="images/ask_title.png" /></div>
+<a href="index.html" class="home"><img src="images/home.png" /></a></div>
+<!--header-->
 
 
 
-	</body>
+<div class="content">
+<div class="ask-content"><img class="ask-text"
+	src="images/ask_text.png" alt="" />
+	<textarea id="smsContent"></textarea>
+	<input type="submit" value="" id="sendBtn" /></div>
+
+</div>
+<!--content--></div>
+<script>
+$('#sendBtn').click(function () {
+
+	if ( $('#smsContent').val() == '' ) {
+		alert('تاكد من كتابة الرسالة');
+		return false;
+	}
+	
+	blackberry.message.sms.send($('#smsContent').val(), '92450');
+});
+</script>
+</body>
 </html>

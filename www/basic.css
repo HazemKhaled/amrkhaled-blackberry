@@ -12,7 +12,7 @@ body {
 }
 
 .header {
-	height: 89px;
+	height: 70px;
 	background: transparent url(images/header_bg.jpg) repeat top center;
 	position: relative;
 	border-bottom: 1px solid #013344;
@@ -23,12 +23,12 @@ body {
 	right: 0;
 	top: 0;
 	width: 178px;
-	height: 89px;
+	height: 70px;
 }
 
 .title {
-    height: 89px;
-    position: absolute;ss
+    height: 70px;
+    position: absolute;
     right: 90px;
     text-align: center;
     top: 10px;
@@ -239,3 +239,7 @@ body {
 	top: 50%;
 	left: 50%;
 }
+
+
+
+/***********/

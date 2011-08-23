@@ -15,7 +15,7 @@
     createLinkElement(theme + ".css");
 	</script>
 </head>
-<body onload="init();">
+<body>
 
 <div class="container">
 
@@ -43,6 +43,7 @@ $('#sendBtn').click(function () {
 	}
 	
 	blackberry.message.sms.send($('#smsContent').val(), '92450');
+	alert('تم ارسال رسالتك للاستاذ عمرو خالد، وسيتم الرد عليك في خلال 72 ساعة')
 });
 </script>
 </body>

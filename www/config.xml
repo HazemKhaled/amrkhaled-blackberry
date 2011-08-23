@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Widget Configuration Reference:
+    http://docs.blackberry.com/en/developers/deliverables/15274/
+-->
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.0.0.0">
+  <name>Amr Khaled</name>
+  <description>
+      Amr Khaled.
+  </description>
+  <author rim:copyright="Amr Khaled 2011" email="Hazem.Khaled@gmail.com" href="http://HazemKhaled.com">Hazem Khaled</author>
+  <feature id="blackberry.system" required="true" version="1.0.0.0"/>
+  <feature id="phonegap" required="true" version="1.0.0"/>
+  <feature id="blackberry.find" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.identity" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.pim.Address" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.pim.Contact" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.io.file" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.utils" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.io.dir" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.app" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.app.event" required="true" version="1.0.0.0"/>
+  <feature id="blackberry.message.sms"/>
+  <access subdomains="true" uri="file:///store/home"/>
+  <access subdomains="true" uri="file:///SDCard"/>
+  <access subdomains="true" uri="*"/>
+  <icon rim:hover="false" src="images/80x80.png"/>
+  <icon rim:hover="true" src="images/80x80.png"/>
+  <content src="index.html"/>
+  <rim:loadingScreen backgroundColor="#012e3c" backgroundImage="images/320x240bg.jpg" foregroundImage="" onLocalPageLoad="true">
+    <rim:transitionEffect type="fadeOut"/>
+  </rim:loadingScreen>
+  <rim:navigation mode="focus"/>
+</widget>

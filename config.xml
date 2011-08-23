@@ -2,6 +2,7 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.0.0.0">
   <name>amrkhaled</name>
   <author rim:copyright="Amr Khaled 2011" email="hazem.khaled@gmail.com" href="http://HazemKhaled.com">Hazem Khaled</author>
+  <access subdomains="true" uri="*"/>
   <icon rim:hover="false" src="images/80x80.png"/>
   <icon rim:hover="true" src="images/80x80.png"/>
   <content src="index.html" rim:allowInvokeParams="false"/>
@@ -10,4 +11,5 @@
   </rim:loadingScreen>
   <rim:navigation mode="focus"/>
   <rim:cache disableAllCache="true"/>
+  <feature id="blackberry.message.sms" />
 </widget>

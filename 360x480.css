@@ -1,0 +1,114 @@
+/*
+ * Add your Stylesheet contents here
+ */
+.header {
+	height: 89px;
+}
+
+.amr_hpic {
+	width: 178px;
+	height: 89px;
+}
+
+.title {
+	height: 89px;
+}
+
+.welcome img {
+	width: 79px;
+	height: 28px;
+	margin-right: 60px;
+}
+
+.home {
+	position: absolute;
+	left: 20px;
+	top: 15px;
+}
+
+.home img {
+	width: 53px;
+}
+
+.main-links {
+	margin-top: 20px;
+}
+
+.main-links li {
+	background: black url(images/360x640_footer_bg.jpg) repeat-x bottom
+		center;
+}
+
+.main-links a {
+	font-size: 23px;
+	height: 80px;
+	line-height: 80px;
+	padding-right: 90px;
+}
+
+.about {
+	background: url(images/amr_icon.png) no-repeat 92% 25px;
+}
+
+.ask {
+	background: url(images/ask_icon.png) no-repeat 92% 25px;
+}
+
+.hosary {
+	background: url(images/hosary_icon.png) no-repeat 92% 25px;
+}
+
+.ma3 {
+	background: url(images/ma3_icon.png) no-repeat 95% 25px;
+}
+
+.about-amr {
+	text-align: center;
+	border-radius: 10px;
+}
+
+.about-amr h1 {
+	margin: 8px 0 15px;
+}
+
+.about-amr .amr_pic2 {
+	float: none;
+	width:100px;
+}
+
+.about-amr p {
+	font-size: 18px;
+	text-align: justify;
+	margin-top: 15px;
+	line-height: 130%;
+}
+
+.ask-title img {
+	width: 150px;
+	height: 18px;
+	margin-right: 40px;
+	margin-top: 25px;
+}
+
+.hosary-title img {
+	width: 150px;
+	height: 24px;
+	margin-right: 40px;
+	margin-top: 28px;
+}
+
+.ma3-title img {
+	width: 145px;
+	height: 28px;
+	margin-right: 40px;
+	margin-top: 28px;
+}
+
+.amr_nav a {
+	border-left: 1px solid #000;
+	display: block;
+	float: right;
+	text-align: center;
+	width: 93px;
+	margin-left: 0px;
+}

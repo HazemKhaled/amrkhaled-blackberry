@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets" version="1.0.0.0">
+  <name>amrkhaled</name>
+  <author rim:copyright="Amr Khaled 2011" email="hazem.khaled@gmail.com" href="http://HazemKhaled.com">Hazem Khaled</author>
+  <icon rim:hover="false" src="images/80x80.png"/>
+  <icon rim:hover="true" src="images/80x80.png"/>
+  <content src="index.html" rim:allowInvokeParams="false"/>
+  <rim:loadingScreen backgroundColor="#012e3c" backgroundImage="images/320x240bg.jpg" foregroundImage="" onLocalPageLoad="true">
+    <rim:transitionEffect type="slideOver" direction="right"/>
+  </rim:loadingScreen>
+  <rim:navigation mode="focus"/>
+  <rim:cache disableAllCache="true"/>
+</widget>
